@@ -10,7 +10,7 @@ def calculateApproximateOfPi(N):
         y = random.uniform(-1, 1)
         #  (x, y)
         # checking if this point falls inside the circle using the formula x^2 + y^2 <= 1
-        if x**2 + y**2 <= 1:
+        if x**2 + y**2 < 1:
             n += 1
         loopCounter -= 1
     print(n, N)
